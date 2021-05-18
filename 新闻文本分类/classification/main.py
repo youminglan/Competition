@@ -1,10 +1,7 @@
 import re
 import numpy as np
 import jieba
-
 import matplotlib.pyplot as plt
-
-
 import os
 
 import tensorflow as tf
@@ -91,3 +88,4 @@ model.compile(loss=keras.losses.binary_crossentropy(from_logits=True),
               )
 
 history = model.fit(train_ds, epochs=10)
+
